@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.navbar {
+  background-color: rgba(133, 128, 128, 0.5); /* Adjust the alpha value as needed */
+}
+
+
+
+.nav_icon{
+  width: 150px;
+  height: 10px;
+}
+.play_icon{
+  width: 150px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  top: 240px;
+
+}
+/* custom.css */
+
+/* custom.css */
+
+.home_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  bottom: 58px;
+  
+  
+}
+
+
+.background_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, rgba(73,128,51,1) 0%, rgba(25,5,5,1) 0%, rgba(222,215,215,1) 51%, rgba(255,246,246,1) 69%), url("https://playo-website.gumlet.io/playo-website-v2/static_pages/hero-images/Landing+Page.jpeg?q=30&h=1200&w=1200&flip=h");
+  background-size: cover;
+  background-blend-mode: multiply; /* Blend mode to darken the background */
+}
+
+
+
+
+
+
+.text_container{
+  position: absolute;
+  left: 120px;
+  top: 50vh;
+ 
+}
+.titles{
+  position: absolute;
+  
+}
+.playstore{
+  position: absolute;
+  left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav_icon {
+    width: 80px;
+    height: 10px;
+  }
+  .background_image{
+    position: absolute;
+    top: 0px;
+    max-width: 100%;
+    height: 60vh;
+  }
+  .play_icon{
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    left: 10px;
+    top: 120px;
+  
+  }
+  .text_container{
+    position: absolute;
+    left: 10px;
+    top: 30vh;
+   
+   
+  }
+  .titles{
+    position: absolute;
+    font-size: 30px;
+    
+  }
+  .title_text{
+    position:relative;
+    font-size: 10px;
+
+  }
+  .playstore{
+   position: absolute;
+ 
+  top: 60px;
+  font-size: 20px;
+  }
+  .onestop-img{
+    display: none;
+  }
+  .home_container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    
+    
+  }
+  .card {
+    width: 20rem !important;
+}
+.swiper-slide img {
+ max-width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+}
+
+/* onsestop component */
+
+.onestop{
+  border-left: 5px solid rgb(58, 84, 21);
+  
+}
+@media screen and (max-width: 1024px) {
+
+  .onestop-img{
+    display: none;
+  }
+}
+
+
+/* navbar active page css */
+
+.navbar-nav .nav-link.active-nav {
+  color: #a75528 !important; /* Bootstrap's success color or any color you prefer */
+  border-bottom: 2px solid #28a745; /* Adds a border to indicate active state */
+  font-weight: bold; /* Makes the text bold */
+}
+
+/* Ensure other nav links don't have the active style */
+.navbar-nav .nav-link {
+  color: #343a40; /* Default text color */
+  border-bottom: none; /* No border for non-active links */
+}
+
+/* Additional styling for a better look */
+.navbar-nav .nav-link:hover {
+  color: #a77828; /* Color change on hover */
+}
+.card {
+  transition: transform 0.3s ease;
+  box-shadow: -11px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: scale(1.02) translate(0, -5px);
+}
+.active-filter {
+  font-weight: bold;
+  color: #007bff; /* Adjust the color as needed */
+}
+/* swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 900px;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper {
+  width: 100%; 
+  height: 500px; 
+  position: relative; /* Add position relative to parent for absolute positioning of buttons */
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: black; 
+  top: 80%;
+  transform: translateY(-50%); 
+  width: 40px; /* Set the width of the buttons */
+  height: 40px; /* Set the height of the buttons */
+  position: absolute; /* Use absolute positioning */
+  z-index: 10; /* Ensure buttons are above the image */
+}
+
+.swiper-button-next {
+  right: 1px; /* Position next button on the right inside the image */
+}
+
+.swiper-button-prev {
+  left: 10px; /* Position prev button on the left inside the image */
+}
